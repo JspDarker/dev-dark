@@ -10,6 +10,14 @@ class PageController extends Controller
 {
     public function page()
     {
-        return view('shop/home');
+        $data['home']= 'lorem12';
+        echo 12;
+        return view('shop/home',compact('data'));
+    }
+
+    public function checkFile()
+    {
+
+        return view('shop/file_process/index',compact('data'));
     }
 }
