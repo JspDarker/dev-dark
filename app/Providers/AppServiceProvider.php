@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Home;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //TODO::view share
+        /*view()->composer('path.menu', function($view) {
+            $view->with('menu', Home::getMenu());
+        });*/
     }
 
     /**
