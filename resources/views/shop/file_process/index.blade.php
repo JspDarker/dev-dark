@@ -1,4 +1,4 @@
-@extends('shop.layouts.master')
+@extends('shop.layouts.simple')
 
 @section('title','@Page::Home')
 

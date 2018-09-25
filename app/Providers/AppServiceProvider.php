@@ -14,10 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //TODO::view share
-        /*view()->composer('path.menu', function($view) {
+        //TODO::view share very good
+        view()->composer('shop.includes.navbar', function($view) {
             $view->with('menu', Home::getMenu());
-        });*/
+        });
     }
 
     /**

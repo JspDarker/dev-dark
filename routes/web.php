@@ -21,8 +21,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::group(['prefix' => 'shop','middleware'=> 'web'],function() {
-
     Route::get('/','Front\PageController@page')->name('page');
+    Route::get('/go','Front\ClientController@go')->name('go');
     Route::get('/up-file','Front\PageController@checkFile')->name('is_file');
 });
 
